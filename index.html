@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hameed Isaam MN — Developer & AI Automation Engineer</title>
+  <meta name="description" content="Portfolio of Hameed Isaam MN — Full-Stack Developer and AI Automation Engineer specializing in web apps and n8n workflows." />
+  <meta property="og:title" content="Hameed Isaam MN | Developer Portfolio" />
+  <meta property="og:description" content="Full-Stack Developer & AI Automation Engineer. Check out my projects and n8n workflows." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <span class="logo-bracket">&lt;</span>HI<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links-list">
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#workflows" id="nav-workflows">Workflows</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
+      </ul>
+      <a href="https://github.com/hameedisaam5-coder" target="_blank" class="btn btn-ghost" id="nav-github-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="line1">Hi, I'm</span>
+        <span class="line2 gradient-text">Hameed Isaam MN</span>
+      </h1>
+      <p class="hero-subtitle">
+        Full-Stack Developer <span class="separator">×</span> AI Automation Engineer
+      </p>
+      <p class="hero-description">
+        I build modern web applications and intelligent automation workflows.
+        Turning complex ideas into elegant, production-ready solutions.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="hero-view-work-btn">View My Work</a>
+        <a href="mailto:hameedisaam_2413047@tsm.ac.in" class="btn btn-outline" id="hero-contact-btn">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" id="stat-projects">4+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" id="stat-workflows">10+</span>
+          <span class="stat-label">Workflows Automated</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" id="stat-deploys">3</span>
+          <span class="stat-label">Live Deployments</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window" id="hero-code-window">
+        <div class="window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-title">hameed.ts</span>
+        </div>
+        <div class="code-content">
+          <div class="code-line"><span class="kw">const</span> <span class="var">me</span> = {</div>
+          <div class="code-line indent"><span class="prop">name</span>: <span class="str">"Hameed Isaam MN"</span>,</div>
+          <div class="code-line indent"><span class="prop">role</span>: <span class="str">"Developer"</span>,</div>
+          <div class="code-line indent"><span class="prop">tools</span>: [</div>
+          <div class="code-line indent2"><span class="str">"n8n"</span>, <span class="str">"TypeScript"</span>,</div>
+          <div class="code-line indent2"><span class="str">"HTML/CSS"</span>, <span class="str">"Python"</span></div>
+          <div class="code-line indent">],</div>
+          <div class="code-line indent"><span class="prop">superpower</span>: <span class="str">"Automation"</span></div>
+          <div class="code-line">};</div>
+          <div class="code-line">&nbsp;</div>
+          <div class="code-line"><span class="kw">export default</span> <span class="var">me</span>; <span class="comment">// 🚀</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">Production-ready web applications deployed and live</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- MealMate -->
+        <div class="project-card featured" id="project-mealmate">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🍽️</div>
+            <div class="project-badges">
+              <span class="badge badge-live">Live</span>
+              <span class="badge badge-lang">HTML</span>
+            </div>
+          </div>
+          <h3 class="project-title">MealMate</h3>
+          <p class="project-desc">
+            A subscription-based meal delivery platform with full subscription management — 
+            pause/resume plans, add-on customization (Paneer, Curd), and automated renewal alerts.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Subscription Management</span>
+          </div>
+          <div class="project-links">
+            <a href="https://meal-mate-lovat-kappa.vercel.app" target="_blank" class="project-link primary" id="mealmate-demo-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/hameedisaam5-coder/MealMate" target="_blank" class="project-link secondary" id="mealmate-repo-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+
+        <!-- OrderIn -->
+        <div class="project-card" id="project-orderin">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🛒</div>
+            <div class="project-badges">
+              <span class="badge badge-live">Live</span>
+              <span class="badge badge-ts">TypeScript</span>
+            </div>
+          </div>
+          <h3 class="project-title">OrderIn</h3>
+          <p class="project-desc">
+            A sleek restaurant food ordering system with dynamic menus, 
+            real-time cart management, and a seamless checkout experience built with TypeScript.
+          </p>
+          <div class="project-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">REST API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://order-in-ten.vercel.app" target="_blank" class="project-link primary" id="orderin-demo-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/hameedisaam5-coder/OrderIn" target="_blank" class="project-link secondary" id="orderin-repo-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+
+        <!-- F1 Dashboard -->
+        <div class="project-card" id="project-f1">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🏎️</div>
+            <div class="project-badges">
+              <span class="badge badge-live">Live</span>
+              <span class="badge badge-lang">Python</span>
+            </div>
+          </div>
+          <h3 class="project-title">F1 Strategy Dashboard</h3>
+          <p class="project-desc">
+            Real-time Formula 1 race strategy dashboard with live telemetry data, 
+            race replay, driver positions, and weather updates using the OpenF1 API.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">Python</span>
+            <span class="tag">WebSockets</span>
+            <span class="tag">OpenF1 API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://f1-dashboard-seven.vercel.app" target="_blank" class="project-link primary" id="f1-demo-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/hameedisaam5-coder/f1-dashboard" target="_blank" class="project-link secondary" id="f1-repo-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- n8n Workflows Section -->
+  <section id="workflows" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Automation</span>
+        <h2 class="section-title">n8n <span class="gradient-text">Workflows</span></h2>
+        <p class="section-desc">Intelligent automation pipelines that save time and eliminate repetitive tasks</p>
+      </div>
+      <div class="workflows-grid">
+        <div class="workflow-card" id="workflow-email">
+          <div class="workflow-icon">📧</div>
+          <h3>Smart Email Processor</h3>
+          <p>AI-powered email classification, prioritization, and automated response generation using OpenAI.</p>
+          <div class="workflow-tools">
+            <span class="tool-badge">n8n</span>
+            <span class="tool-badge">OpenAI</span>
+            <span class="tool-badge">Gmail</span>
+          </div>
+        </div>
+        <div class="workflow-card" id="workflow-data">
+          <div class="workflow-icon">📊</div>
+          <h3>Data Pipeline Automation</h3>
+          <p>Extract, transform and load data across multiple platforms with scheduled triggers and error handling.</p>
+          <div class="workflow-tools">
+            <span class="tool-badge">n8n</span>
+            <span class="tool-badge">Webhooks</span>
+            <span class="tool-badge">REST APIs</span>
+          </div>
+        </div>
+        <div class="workflow-card" id="workflow-notify">
+          <div class="workflow-icon">🔔</div>
+          <h3>Smart Notification System</h3>
+          <p>Event-driven alert system that triggers intelligent notifications across Slack, Telegram, and Email.</p>
+          <div class="workflow-tools">
+            <span class="tool-badge">n8n</span>
+            <span class="tool-badge">Slack</span>
+            <span class="tool-badge">Telegram</span>
+          </div>
+        </div>
+        <div class="workflow-card" id="workflow-crm">
+          <div class="workflow-icon">🗂️</div>
+          <h3>CRM Sync Automation</h3>
+          <p>Keep contacts, deals, and data synchronized across CRM tools automatically with bi-directional sync.</p>
+          <div class="workflow-tools">
+            <span class="tool-badge">n8n</span>
+            <span class="tool-badge">HubSpot</span>
+            <span class="tool-badge">Airtable</span>
+          </div>
+        </div>
+      </div>
+      <div class="workflows-cta">
+        <p>🤝 Interested in automation solutions for your business?</p>
+        <a href="mailto:hameedisaam_2413047@tsm.ac.in" class="btn btn-primary" id="workflows-contact-btn">Let's Talk Automation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category" id="skills-frontend">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🎨</span> Frontend
+          </h3>
+          <div class="skills-list">
+            <div class="skill-item"><span>HTML5</span><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div>
+            <div class="skill-item"><span>CSS3</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-item"><span>TypeScript</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category" id="skills-backend">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">⚙️</span> Backend & Tools
+          </h3>
+          <div class="skills-list">
+            <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-item"><span>Node.js</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+            <div class="skill-item"><span>REST APIs</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+            <div class="skill-item"><span>Git & GitHub</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category" id="skills-automation">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🤖</span> Automation
+          </h3>
+          <div class="skills-list">
+            <div class="skill-item"><span>n8n</span><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div>
+            <div class="skill-item"><span>Workflow Design</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+            <div class="skill-item"><span>OpenAI API</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-item"><span>Webhooks</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-desc">Open to freelance projects, collaborations, and full-time opportunities</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:hameedisaam_2413047@tsm.ac.in" class="contact-card" id="contact-email-card">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <p>hameedisaam_2413047@tsm.ac.in</p>
+          <span class="contact-action">Send Email →</span>
+        </a>
+        <a href="https://github.com/hameedisaam5-coder" target="_blank" class="contact-card" id="contact-github-card">
+          <div class="contact-icon">💻</div>
+          <h3>GitHub</h3>
+          <p>@hameedisaam5-coder</p>
+          <span class="contact-action">View Profile →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-logo"><span class="logo-bracket">&lt;</span>HI<span class="logo-bracket">/&gt;</span></span>
+        <p>Built with ❤️ by Hameed Isaam MN</p>
+        <p class="footer-copy">© 2026 · hameedisaam5-coder.github.io</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
